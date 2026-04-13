@@ -1,6 +1,6 @@
 # Tello-MiDaS - Experimental Indoor Navigator
 
-> A proof-of-concept embodied AI agent built from a DJI Tello drone and an old laptop. No LiDAR. No pre-mapped paths. Just a depth model and a simple rule.
+> A proof-of-concept embodied AI agent built from a Ryze Tello drone and an old laptop. No LiDAR. No pre-mapped paths. Just a depth model and a simple rule.
 
 ---
 
@@ -55,7 +55,7 @@ pip install djitellopy opencv-python torch torchvision numpy
 
 - Python 3.8+
 - PyTorch (CPU works; CUDA speeds things up significantly)
-- DJI Tello drone connected via Wi-Fi
+- Ryze Tello drone connected via Wi-Fi
 - MiDaS weights download automatically via `torch.hub`
 
 ---
