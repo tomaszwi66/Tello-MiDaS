@@ -39,11 +39,9 @@ The key improvement was **linking yaw rotation speed to the visual offset of the
 ## Repository Structure
 
 ```
-tello-MiDaS/
-├── v1_discrete/
-│   └── navigator_v1.py        # Discrete move/rotate loop (the "frog leap" version)
-├── v2_continuous/
-│   └── navigator_v2.py        # Continuous RC control with proportional yaw (the fluid version)
+Tello-MiDaS/
+├── tello_midas_navigator.py   # Main navigator - continuous RC control with proportional yaw
+├── requirements.txt
 └── README.md
 ```
 
@@ -65,14 +63,10 @@ pip install djitellopy opencv-python torch torchvision numpy
 ## Running It
 
 1. Connect your computer to the Tello's Wi-Fi network
-2. Run either version:
+2. Run:
 
 ```bash
-# Discrete version (safer for first tests)
-python v1_discrete/navigator_v1.py
-
-# Continuous RC version (smoother flight)
-python v2_continuous/navigator_v2.py
+python tello_midas_navigator.py
 ```
 
 3. Press `q` to quit and land the drone
@@ -83,7 +77,7 @@ python v2_continuous/navigator_v2.py
 
 ## Known Failure Modes
 
-These are documented intentionally. They informed what needs to be fixed in v2.
+These are documented intentionally. They informed what needs to be fixed in the next version.
 
 | Failure | Cause |
 |---|---|
@@ -93,7 +87,7 @@ These are documented intentionally. They informed what needs to be fixed in v2.
 
 ---
 
-## What v1 Proved
+## What This Proved
 
 - A depth-based "fly to the furthest point" heuristic solves most indoor navigation by itself
 - Indoor autonomy is not just a perception problem - it's a **grounding problem**: the agent needs to understand its position within the space, not just what it sees
