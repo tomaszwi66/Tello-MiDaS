@@ -17,7 +17,7 @@ No sensors. No maps. No pre-programmed paths. Just one heuristic:
 
 That single rule handles the vast majority of indoor navigation. Everything else is edge-case mitigation.
 
-Started in November 2023 on a battered VAIO laptop. It flew. It also crashed. A lot. That was the point.
+Started in 2024 on a battered VAIO laptop. It flew. It also crashed. A lot. That was the point.
 
 ---
 
